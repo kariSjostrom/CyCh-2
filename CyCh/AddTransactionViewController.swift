@@ -18,6 +18,8 @@ class AddTransactionViewController: UIViewController {
     @IBOutlet weak var status: UILabel!
     
     @IBAction func btnSave(sender: AnyObject) {
+        var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+        var context: NSManagedObjectContext = appDel.managedObjectContext
     }
     
     @IBAction func btnClear(sender: AnyObject) {
