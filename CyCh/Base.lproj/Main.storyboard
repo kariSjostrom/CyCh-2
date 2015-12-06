@@ -80,7 +80,7 @@
         <!--Ledger-->
         <scene sceneID="95D-Qd-aMM">
             <objects>
-                <tableViewController title="Ledger" id="b3A-wk-TwB" sceneMemberID="viewController">
+                <tableViewController title="Ledger" id="b3A-wk-TwB" customClass="LedgerTableViewController" customModule="CyCh" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="h1i-T0-xsn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="1019" y="316"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Transaction View Controller-->
         <scene sceneID="Q0a-5E-XoE">
             <objects>
-                <viewController id="8sg-ee-Vfo" sceneMemberID="viewController">
+                <viewController id="8sg-ee-Vfo" customClass="AddTransactionViewController" customModule="CyCh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rwP-DK-EGu"/>
                         <viewControllerLayoutGuide type="bottom" id="wRp-mi-wKp"/>
@@ -155,7 +155,7 @@
                                     <constraint firstAttribute="height" constant="30" id="qq6-UK-Qsk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1eK-fb-qRj">
                                 <rect key="frame" x="252" y="270" width="97" height="30"/>
@@ -260,8 +260,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9it-MK-Txm"/>
-        <segue reference="UMa-51-YVo"/>
-        <segue reference="tUX-Mr-nyN"/>
+        <segue reference="IUy-2o-WyK"/>
+        <segue reference="Gss-EC-gYz"/>
+        <segue reference="VVQ-iO-DiJ"/>
     </inferredMetricsTieBreakers>
 </document>
