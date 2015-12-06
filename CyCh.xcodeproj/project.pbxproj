@@ -17,6 +17,8 @@
 		4F539D6D1C14A60400921D6E /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D6C1C14A60400921D6E /* AddTransactionViewController.swift */; };
 		4F539D6F1C14A66F00921D6E /* LedgerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D6E1C14A66F00921D6E /* LedgerTableViewController.swift */; };
 		4F539D711C14A9A400921D6E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D701C14A9A400921D6E /* Transaction.swift */; };
+		4F539D741C14F13600921D6E /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */; };
+		4F539D751C14F13600921D6E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D731C14F13600921D6E /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4F539D6C1C14A60400921D6E /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		4F539D6E1C14A66F00921D6E /* LedgerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedgerTableViewController.swift; sourceTree = "<group>"; };
 		4F539D701C14A9A400921D6E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4F539D731C14F13600921D6E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 		4F539D471C13EA1400921D6E = {
 			isa = PBXGroup;
 			children = (
+				4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */,
+				4F539D731C14F13600921D6E /* Transaction.swift */,
 				4F539D691C14964B00921D6E /* pages */,
 				4F539D681C14960100921D6E /* Images */,
 				4F539D521C13EA1400921D6E /* CyCh */,
@@ -168,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F539D561C13EA1400921D6E /* ViewController.swift in Sources */,
+				4F539D741C14F13600921D6E /* Transaction+CoreDataProperties.swift in Sources */,
+				4F539D751C14F13600921D6E /* Transaction.swift in Sources */,
 				4F539D5C1C13EA1400921D6E /* CyCh.xcdatamodeld in Sources */,
 				4F539D711C14A9A400921D6E /* Transaction.swift in Sources */,
 				4F539D6F1C14A66F00921D6E /* LedgerTableViewController.swift in Sources */,
