@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController {
+    var transactiondb:NSManagedObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()

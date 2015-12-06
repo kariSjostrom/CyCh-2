@@ -10,6 +10,12 @@ import UIKit
 import CoreData
 
 class AddTransactionViewController: UIViewController {
+    let managedObjectContext =
+    (UIApplication.sharedApplication().delegate
+        as! AppDelegate).managedObjectContext
+    
+     
+    
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var amount: UITextField!
 
