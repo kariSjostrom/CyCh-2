@@ -10,11 +10,19 @@ import UIKit
 import CoreData
 
 class AddTransactionViewController: UIViewController {
+    var transactiondb:NSManagedObject!
     let managedObjectContext =
     (UIApplication.sharedApplication().delegate
         as! AppDelegate).managedObjectContext
-    
-     
+
+
+    @IBAction func btnHome(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
+
+    @IBAction func btnView(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
     
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var amount: UITextField!
@@ -25,26 +33,40 @@ class AddTransactionViewController: UIViewController {
     @IBOutlet weak var status: UILabel!
     
     @IBAction func btnSave(sender: AnyObject) {
-        // Save
-        let appDel: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
-        let context: NSManagedObjectContext = appDel.managedObjectContext
+        if (transactiondb != nil)
+        {
+            transactiondb.setValue(amount.text, forKey: "amount")
+            transactiondb.setValue(notes.text, forKey: "description")
+            transactiondb.setValue(ttype.text, forKey: "type")
+            //transactiondb.setValue(date)
+            //???transactiondb.setValue(type??)
+        }
+        else
+        {
+            let entityDescription =
+            NSEntityDescription.entityForName("Transaction",inManagedObjectContext: managedObjectContext)
+            
+            let transaction = Transaction(entity: entityDescription!,
+                insertIntoManagedObjectContext: managedObjectContext)
+            
+            transaction.amount = amount.text!
+            transaction.notes = notes.text!
+            transaction.type = ttype.text!
+        }
+        var error: NSError?
+        do {
+            try managedObjectContext.save()
+        } catch let error1 as NSError {
+            error = error1
+        }
         
-        let ent = NSEntityDescription.entityForName("Transaction", inManagedObjectContext: context)
-        
-        //Reference to entity
-        let newTransaction = Transaction(entity: ent!, insertIntoManagedObjectContext: context)
-        
-        //Core Data
-        newTransaction.amount = amount.text!
-        newTransaction.notes = notes.text!
-        // (PickerView) newTransaction.type = type.text!
-        
-//        let dateFormatter = NSDateFormatter()
-//        var curLocale: NSLocale = NSLocale.currentLocale()
-//        var formatString: NSString = NSDateFormatter.dateFormatFromTemplate(<#T##tmplate: String##String#>, options: <#T##Int#>, locale: <#T##NSLocale?#>)
-        
-        ;
-        
+        if let err = error {
+            status.text = err.localizedFailureReason
+        } else {
+            self.dismissViewControllerAnimated(false, completion: nil)
+            
+        }
+                
     }
     
     @IBAction func btnClear(sender: AnyObject) {

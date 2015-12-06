@@ -217,11 +217,13 @@
                                     <navigationItem title="Add Transaction" id="XUC-YA-7Ba">
                                         <barButtonItem key="leftBarButtonItem" title="View Transactions" id="erD-fP-Ye3">
                                             <connections>
+                                                <action selector="btnView:" destination="8sg-ee-Vfo" id="8wF-ue-DeJ"/>
                                                 <segue destination="f1S-cb-BZR" kind="show" id="Gss-EC-gYz"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Home" id="t1N-ou-wSB">
                                             <connections>
+                                                <action selector="btnHome:" destination="8sg-ee-Vfo" id="H8l-Gd-Lbi"/>
                                                 <segue destination="BYZ-38-t0r" kind="presentation" id="UMa-51-YVo"/>
                                             </connections>
                                         </barButtonItem>
@@ -303,7 +305,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9it-MK-Txm"/>
-        <segue reference="VVQ-iO-DiJ"/>
-        <segue reference="tUX-Mr-nyN"/>
+        <segue reference="UMa-51-YVo"/>
+        <segue reference="Gss-EC-gYz"/>
     </inferredMetricsTieBreakers>
 </document>

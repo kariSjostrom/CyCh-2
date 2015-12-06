@@ -11,6 +11,9 @@ import CoreData
 
 class ViewController: UIViewController {
     var transactiondb:NSManagedObject!
+    let managedObjectContext =
+    (UIApplication.sharedApplication().delegate
+        as! AppDelegate).managedObjectContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
