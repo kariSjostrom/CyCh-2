@@ -146,6 +146,9 @@
                                 <rect key="frame" x="355" y="506" width="34" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="8sg-ee-Vfo" eventType="touchUpInside" id="ne8-x6-1HD"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUk-7I-Bd1">
                                 <rect key="frame" x="252" y="232" width="97" height="30"/>
@@ -184,6 +187,9 @@
                                 <rect key="frame" x="282" y="506" width="36" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="btnClear:" destination="8sg-ee-Vfo" eventType="touchUpInside" id="RoW-Cg-euC"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRz-oe-kAk">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
@@ -236,6 +242,13 @@
                             <constraint firstItem="M0v-sN-hRC" firstAttribute="top" secondItem="VgE-sq-gpf" secondAttribute="top" id="wSq-GV-pA7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amount" destination="DUk-7I-Bd1" id="VVC-rS-u3Q"/>
+                        <outlet property="date" destination="phB-uW-t24" id="TAt-Kt-SGw"/>
+                        <outlet property="notes" destination="1eK-fb-qRj" id="Cxh-Wn-iaa"/>
+                        <outlet property="status" destination="0jN-TR-Iat" id="b5d-TH-TDu"/>
+                        <outlet property="type" destination="Sor-UV-0Nh" id="GQ1-PP-h1I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29Y-6a-flg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,6 +275,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="IUy-2o-WyK"/>
         <segue reference="Gss-EC-gYz"/>
-        <segue reference="VVQ-iO-DiJ"/>
+        <segue reference="UMa-51-YVo"/>
     </inferredMetricsTieBreakers>
 </document>

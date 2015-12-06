@@ -16,6 +16,7 @@
 		4F539D6B1C14968E00921D6E /* countYourChickens.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F539D6A1C14968D00921D6E /* countYourChickens.png */; };
 		4F539D6D1C14A60400921D6E /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D6C1C14A60400921D6E /* AddTransactionViewController.swift */; };
 		4F539D6F1C14A66F00921D6E /* LedgerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D6E1C14A66F00921D6E /* LedgerTableViewController.swift */; };
+		4F539D711C14A9A400921D6E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D701C14A9A400921D6E /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4F539D6A1C14968D00921D6E /* countYourChickens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countYourChickens.png; sourceTree = "<group>"; };
 		4F539D6C1C14A60400921D6E /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		4F539D6E1C14A66F00921D6E /* LedgerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedgerTableViewController.swift; sourceTree = "<group>"; };
+		4F539D701C14A9A400921D6E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				4F539D5F1C13EA1500921D6E /* LaunchScreen.storyboard */,
 				4F539D621C13EA1500921D6E /* Info.plist */,
 				4F539D5A1C13EA1400921D6E /* CyCh.xcdatamodeld */,
+				4F539D701C14A9A400921D6E /* Transaction.swift */,
 			);
 			path = CyCh;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				4F539D561C13EA1400921D6E /* ViewController.swift in Sources */,
 				4F539D5C1C13EA1400921D6E /* CyCh.xcdatamodeld in Sources */,
+				4F539D711C14A9A400921D6E /* Transaction.swift in Sources */,
 				4F539D6F1C14A66F00921D6E /* LedgerTableViewController.swift in Sources */,
 				4F539D541C13EA1400921D6E /* AppDelegate.swift in Sources */,
 				4F539D6D1C14A60400921D6E /* AddTransactionViewController.swift in Sources */,

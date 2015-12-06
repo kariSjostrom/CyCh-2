@@ -7,9 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
 class AddTransactionViewController: UIViewController {
+    @IBOutlet weak var date: UIDatePicker!
+    @IBOutlet weak var amount: UITextField!
 
+    @IBOutlet weak var notes: UITextField!
+    @IBOutlet weak var type: UIPickerView!
+    @IBOutlet weak var status: UILabel!
+    
+    @IBAction func btnSave(sender: AnyObject) {
+    }
+    
+    @IBAction func btnClear(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
