@@ -14,21 +14,30 @@ class AddTransactionViewController: UIViewController {
     @IBOutlet weak var amount: UITextField!
 
     @IBOutlet weak var notes: UITextField!
+    @IBOutlet weak var ttype: UITextField!
     @IBOutlet weak var type: UIPickerView!
     @IBOutlet weak var status: UILabel!
     
     @IBAction func btnSave(sender: AnyObject) {
         // Save
-        var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
-        var context: NSManagedObjectContext = appDel.managedObjectContext
+        let appDel: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+        let context: NSManagedObjectContext = appDel.managedObjectContext
         
-        let ent = NSEntityDescription.entityForName("Ledger", inManagedObjectContext: context)
+        let ent = NSEntityDescription.entityForName("Transaction", inManagedObjectContext: context)
         
         //Reference to entity
-        var newTransaction = Transaction(entity: ent!, insertIntoManagedObjectContext: context)
+        let newTransaction = Transaction(entity: ent!, insertIntoManagedObjectContext: context)
         
         //Core Data
+        newTransaction.amount = amount.text!
+        newTransaction.notes = notes.text!
+        // (PickerView) newTransaction.type = type.text!
         
+//        let dateFormatter = NSDateFormatter()
+//        var curLocale: NSLocale = NSLocale.currentLocale()
+//        var formatString: NSString = NSDateFormatter.dateFormatFromTemplate(<#T##tmplate: String##String#>, options: <#T##Int#>, locale: <#T##NSLocale?#>)
+        
+        ;
         
     }
     
