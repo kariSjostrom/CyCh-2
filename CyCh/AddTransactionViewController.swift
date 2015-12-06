@@ -18,8 +18,18 @@ class AddTransactionViewController: UIViewController {
     @IBOutlet weak var status: UILabel!
     
     @IBAction func btnSave(sender: AnyObject) {
+        // Save
         var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         var context: NSManagedObjectContext = appDel.managedObjectContext
+        
+        let ent = NSEntityDescription.entityForName("Ledger", inManagedObjectContext: context)
+        
+        //Reference to entity
+        var newTransaction = Transaction(entity: ent!, insertIntoManagedObjectContext: context)
+        
+        //Core Data
+        
+        
     }
     
     @IBAction func btnClear(sender: AnyObject) {
