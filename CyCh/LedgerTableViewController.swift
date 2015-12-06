@@ -175,7 +175,7 @@ class LedgerTableViewController: UITableViewController, UISearchResultsUpdating,
                     if (self.resultSearchController.active) {
                         if let SelectIndex = tableView.indexPathForSelectedRow?.row {
                             let selectedDevice:NSManagedObject = filteredTableData[SelectIndex] as NSManagedObject
-                            destination.contactdb = selectedDevice
+                            destination.transactiondb = selectedDevice
                             resultSearchController.active = false
                         }
                         
@@ -183,7 +183,7 @@ class LedgerTableViewController: UITableViewController, UISearchResultsUpdating,
                     else {
                         if let SelectIndex = tableView.indexPathForSelectedRow?.row {
                             let selectedDevice:NSManagedObject = transactionArray[SelectIndex] as NSManagedObject
-                            destination.contactdb = selectedDevice
+                            destination.transactiondb = selectedDevice
                         }
                         
                     }
