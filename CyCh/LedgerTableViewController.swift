@@ -7,9 +7,27 @@
 //
 
 import UIKit
+import CoreData
+import Foundation
 
-class LedgerTableViewController: UITableViewController {
 
+class LedgerTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, UISearchControllerDelegate {
+    var filteredTableData = [NSManagedObject]()
+    var resultsSearchController = UISearchController()
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController)
+    {
+        filteredTableData.removeAll(keepCapacity: false)
+        //search for field in CoreData
+        let searchPredicate = NSPredicate(format: "amount CONTAINS[c] %@", searchController.searchBar.text!)
+        let array = (transactionArray as NSArray).filteredArrayUsingPredicate(searchPredicate)
+        filteredTableData = array as! [NSManagedObject]
+        
+        self.tableView.reloadData()
+    }
+    
+    var transactionArray = [NSManagedObject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
