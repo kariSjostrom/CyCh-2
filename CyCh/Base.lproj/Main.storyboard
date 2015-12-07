@@ -192,13 +192,16 @@
                                 <date key="date" timeIntervalSinceReferenceDate="470944285.12797803">
                                     <!--2015-12-04 17:51:25 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="pickdate:" destination="8sg-ee-Vfo" eventType="valueChanged" id="n9Q-aX-UA5"/>
+                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgE-sq-gpf">
                                 <rect key="frame" x="282" y="506" width="36" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
-                                    <action selector="btnClear:" destination="8sg-ee-Vfo" eventType="touchUpInside" id="0JQ-5Z-apv"/>
+                                    <action selector="btnClear:" destination="8sg-ee-Vfo" eventType="touchUpInside" id="QES-Mb-7un"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRz-oe-kAk">
@@ -323,6 +326,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="9it-MK-Txm"/>
         <segue reference="UMa-51-YVo"/>
-        <segue reference="tUX-Mr-nyN"/>
+        <segue reference="Gss-EC-gYz"/>
     </inferredMetricsTieBreakers>
 </document>

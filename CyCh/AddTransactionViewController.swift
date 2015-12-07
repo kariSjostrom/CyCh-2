@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddTransactionViewController: UIViewController {
+class AddTransactionViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     var transactiondb:NSManagedObject!
     let managedObjectContext =
     (UIApplication.sharedApplication().delegate
@@ -25,6 +25,14 @@ class AddTransactionViewController: UIViewController {
     }
     
     @IBOutlet weak var date: UIDatePicker!
+ 
+    @IBAction func pickdate(sender: AnyObject) {
+        let dateformatter = NSDateFormatter()
+        dateformatter.dateFormat = "dd-MM-yyy"
+        var.strDate = dateformatter.stringFromDate(date.data)
+        self.tdate.text = strDate
+    }
+
     @IBOutlet weak var tdate: UITextField!
     @IBOutlet weak var amount: UITextField!
     @IBOutlet weak var notes: UITextField!
