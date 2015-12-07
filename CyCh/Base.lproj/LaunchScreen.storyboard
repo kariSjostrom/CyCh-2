@@ -17,13 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="countYourChickens.png" translatesAutoresizingMaskIntoConstraints="NO" id="dNC-AC-WIv">
-                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="countYourChickensSplash.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Hg-x2-WYH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Hg-x2-WYH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1tj-ww-n5o"/>
+                            <constraint firstItem="1Hg-x2-WYH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4Xw-i8-Sxk"/>
+                            <constraint firstItem="1Hg-x2-WYH" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="9Gq-gP-iY6"/>
+                            <constraint firstAttribute="trailing" secondItem="1Hg-x2-WYH" secondAttribute="trailing" id="xa3-WV-oWV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="countYourChickens.png" width="768" height="768"/>
+        <image name="countYourChickensSplash.png" width="3000" height="3000"/>
     </resources>
 </document>

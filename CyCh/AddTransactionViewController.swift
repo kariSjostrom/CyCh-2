@@ -26,12 +26,12 @@ class AddTransactionViewController: UIViewController, UIPickerViewDataSource, UI
     
     @IBOutlet weak var date: UIDatePicker!
  
-    @IBAction func pickdate(sender: AnyObject) {
-        let dateformatter = NSDateFormatter()
-        dateformatter.dateFormat = "dd-MM-yyy"
-        var.strDate = dateformatter.stringFromDate(date.data)
-        self.tdate.text = strDate
-    }
+//    @IBAction func pickdate(sender: AnyObject) {
+//        let dateformatter = NSDateFormatter()
+//        dateformatter.dateFormat = "dd-MM-yyy"
+//        var.strDate = dateformatter.stringFromDate(date.data)
+//        self.tdate.text = strDate
+//    }
 
     @IBOutlet weak var tdate: UITextField!
     @IBOutlet weak var amount: UITextField!

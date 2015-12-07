@@ -19,6 +19,7 @@
 		4F539D711C14A9A400921D6E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D701C14A9A400921D6E /* Transaction.swift */; };
 		4F539D741C14F13600921D6E /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */; };
 		4F539D751C14F13600921D6E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D731C14F13600921D6E /* Transaction.swift */; };
+		4F539D771C15431500921D6E /* countYourChickensSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F539D761C15431500921D6E /* countYourChickensSplash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4F539D701C14A9A400921D6E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F539D731C14F13600921D6E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4F539D761C15431500921D6E /* countYourChickensSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countYourChickensSplash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		4F539D681C14960100921D6E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4F539D761C15431500921D6E /* countYourChickensSplash.png */,
 				4F539D6A1C14968D00921D6E /* countYourChickens.png */,
 			);
 			name = Images;
@@ -161,6 +164,7 @@
 			files = (
 				4F539D6B1C14968E00921D6E /* countYourChickens.png in Resources */,
 				4F539D611C13EA1500921D6E /* LaunchScreen.storyboard in Resources */,
+				4F539D771C15431500921D6E /* countYourChickensSplash.png in Resources */,
 				4F539D5E1C13EA1500921D6E /* Assets.xcassets in Resources */,
 				4F539D591C13EA1400921D6E /* Main.storyboard in Resources */,
 			);
@@ -330,6 +334,7 @@
 				4F539D671C13EA1500921D6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
