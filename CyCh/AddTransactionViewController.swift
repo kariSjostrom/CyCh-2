@@ -137,42 +137,6 @@ class AddTransactionViewController: UIViewController {
     
     var selectedtype:String!
     let pickertype = ["Savings","Spending","Income"]
-    @IBAction func btnLoad(sender: UIButton) {
-        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        
-        if let userAmountNotNull = defaults.objectForKey("amount") as? String {
-            self.amount.text = defaults.objectForKey("amount") as? String
-        }
-        
-        if let notesIsNotNill = defaults.objectForKey("notes") as? String {
-            self.notes.text = defaults.objectForKey("notes") as? String
-        }
-        
-        if let dateIsNotNill = defaults.objectForKey("date") as? String {
-            self.tdate.text = defaults.objectForKey("date") as? String
-        }
-        
-        
-        if let typeIsNotNill = defaults.objectForKey("type") as? String {
-            var typeSelected = defaults.objectForKey("type") as! String
-            let Selectedtype:Int = (pickertype).indexOf(typeSelected)!
-            
-            if (typeSelected=="Saving")
-            {
-                self.view.backgroundColor = UIColor.whiteColor()
-            }
-            if (typeSelected=="Spending")
-            {
-                self.view.backgroundColor = UIColor.redColor()
-            }
-            if (typeSelected=="Income")
-            {
-                self.view.backgroundColor = UIColor.yellowColor()
-            }
-            
-            type.selectRow(Selectedtype,inComponent: 0, animated: true)
-        }
-    }
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }

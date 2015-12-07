@@ -38,7 +38,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Funds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45O-xi-3oA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Funds:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45O-xi-3oA">
                                 <rect key="frame" x="180" y="234" width="240" height="51"/>
                                 <animations/>
                                 <constraints>
@@ -49,7 +49,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L0-Nf-GLE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L0-Nf-GLE">
                                 <rect key="frame" x="164" y="293" width="272" height="73"/>
                                 <animations/>
                                 <constraints>
@@ -73,6 +73,9 @@
                             <constraint firstItem="7L0-Nf-GLE" firstAttribute="top" secondItem="45O-xi-3oA" secondAttribute="bottom" constant="8" symbolic="YES" id="xei-PG-cvN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Funds" destination="7L0-Nf-GLE" id="KgR-i1-alP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,8 +321,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IUy-2o-WyK"/>
-        <segue reference="Gss-EC-gYz"/>
+        <segue reference="9it-MK-Txm"/>
         <segue reference="UMa-51-YVo"/>
+        <segue reference="tUX-Mr-nyN"/>
     </inferredMetricsTieBreakers>
 </document>
