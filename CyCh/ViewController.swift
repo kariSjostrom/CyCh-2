@@ -49,27 +49,40 @@ class ViewController: UIViewController {
         let fetchRequest = NSFetchRequest(entityName:"Total")
         let error: NSError?
         
+    /* Need to fix the Total Funds available calculator
         do {
             let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
             if let results = fetchedResults {
-                Funds.text = ("===\(results)")
+                Funds.text = ("===\(results)"); print(Funds.text);
                 // Calculate the grand total...
                 var totalAvailable = 0
+                var savings = 0
+                var spending = 0
+                var income = 0
                 for order in results {
-                    let saving = valueForKey(transaction.amount, forKey: "amount") as! Int
-                    let spending = order.valueForKey("spending") as! Int
-                    let income = order.valueForKey("income") as! Int
+                    
+                    let value = valueForKey(transaction.amount, ForKey: "amount") as! Int
+                    if {transaction.type = saving;)
+                        then; transaction.amount = savings as int
+                    }
+                    if {transaction.type = spending
+                        then; transaction.amount = spending as int
+                    }
+                    if {transaction.type = income
+                        then; transaction.amount = income as int
+                        }
+                    }
                     totalAvailable += income - spending - saving
                 }
-                Funds.text = ("\(totalAvailable)")
+        Funds.text = ("\(totalAvailable)"); print(Funds.text);
             } else {
                 Funds.text = ("$0.00")
             }
         } catch let error as NSError {
             // failure
             print("Fetch failed: \(error.localizedDescription)")
-        }
+        } */
+    
     }
 
 }
-
