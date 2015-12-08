@@ -15,6 +15,9 @@ class AddTransactionViewController: UIViewController, UIPickerViewDataSource, UI
     (UIApplication.sharedApplication().delegate
         as! AppDelegate).managedObjectContext
 
+    @IBAction func datePickerChanged(sender: UIDatePicker) {
+        setDateAndTime()
+    }
 
     @IBAction func btnHome(sender: AnyObject) {
         self.dismissViewControllerAnimated(false, completion: nil)
@@ -23,15 +26,15 @@ class AddTransactionViewController: UIViewController, UIPickerViewDataSource, UI
     @IBAction func btnView(sender: AnyObject) {
         self.dismissViewControllerAnimated(false, completion: nil)
     }
-    
+    @IBOutlet var datePicker:UIDatePicker!
     @IBOutlet weak var date: UIDatePicker!
- 
-//    @IBAction func pickdate(sender: AnyObject) {
-//        let dateformatter = NSDateFormatter()
-//        dateformatter.dateFormat = "dd-MM-yyy"
-//        var.strDate = dateformatter.stringFromDate(date.data)
-//        self.tdate.text = strDate
-//    }
+    let dateFormatter = NSDateFormatter()
+    
+    func setDateAndTime() {
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        tdate.text = dateFormatter.stringFromDate(datePicker.date)
+    }
+
 
     @IBOutlet weak var tdate: UITextField!
     @IBOutlet weak var amount: UITextField!
@@ -156,17 +159,16 @@ class AddTransactionViewController: UIViewController, UIPickerViewDataSource, UI
         selectedtype=pickertype[row]
         if (selectedtype=="Saving")
         {
-            self.view.backgroundColor = UIColor.whiteColor()
+            ttype.text = "Saving"
         }
         if (selectedtype=="Spending")
         {
-            self.view.backgroundColor = UIColor.redColor()
+            ttype.text = "Spending"
         }
         if (selectedtype=="Income")
         {
-            self.view.backgroundColor = UIColor.yellowColor()
+            ttype.text = "Income"
         }
-        
         return pickertype[row]
         
     }

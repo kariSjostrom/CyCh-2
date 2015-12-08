@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36AAB6A41C16346400B83B36 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAB6A21C16346400B83B36 /* Transaction+CoreDataProperties.swift */; };
+		36AAB6A51C16346400B83B36 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAB6A31C16346400B83B36 /* Transaction.swift */; };
 		4F539D541C13EA1400921D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D531C13EA1400921D6E /* AppDelegate.swift */; };
 		4F539D561C13EA1400921D6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D551C13EA1400921D6E /* ViewController.swift */; };
 		4F539D591C13EA1400921D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539D571C13EA1400921D6E /* Main.storyboard */; };
@@ -16,13 +18,12 @@
 		4F539D6B1C14968E00921D6E /* countYourChickens.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F539D6A1C14968D00921D6E /* countYourChickens.png */; };
 		4F539D6D1C14A60400921D6E /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D6C1C14A60400921D6E /* AddTransactionViewController.swift */; };
 		4F539D6F1C14A66F00921D6E /* LedgerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D6E1C14A66F00921D6E /* LedgerTableViewController.swift */; };
-		4F539D711C14A9A400921D6E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D701C14A9A400921D6E /* Transaction.swift */; };
-		4F539D741C14F13600921D6E /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */; };
-		4F539D751C14F13600921D6E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539D731C14F13600921D6E /* Transaction.swift */; };
 		4F539D771C15431500921D6E /* countYourChickensSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F539D761C15431500921D6E /* countYourChickensSplash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36AAB6A21C16346400B83B36 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		36AAB6A31C16346400B83B36 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4F539D501C13EA1400921D6E /* CyCh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyCh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F539D531C13EA1400921D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F539D551C13EA1400921D6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,9 +35,6 @@
 		4F539D6A1C14968D00921D6E /* countYourChickens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countYourChickens.png; sourceTree = "<group>"; };
 		4F539D6C1C14A60400921D6E /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		4F539D6E1C14A66F00921D6E /* LedgerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedgerTableViewController.swift; sourceTree = "<group>"; };
-		4F539D701C14A9A400921D6E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
-		4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4F539D731C14F13600921D6E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4F539D761C15431500921D6E /* countYourChickensSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countYourChickensSplash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,8 +52,8 @@
 		4F539D471C13EA1400921D6E = {
 			isa = PBXGroup;
 			children = (
-				4F539D721C14F13600921D6E /* Transaction+CoreDataProperties.swift */,
-				4F539D731C14F13600921D6E /* Transaction.swift */,
+				36AAB6A21C16346400B83B36 /* Transaction+CoreDataProperties.swift */,
+				36AAB6A31C16346400B83B36 /* Transaction.swift */,
 				4F539D691C14964B00921D6E /* pages */,
 				4F539D681C14960100921D6E /* Images */,
 				4F539D521C13EA1400921D6E /* CyCh */,
@@ -83,7 +81,6 @@
 				4F539D5F1C13EA1500921D6E /* LaunchScreen.storyboard */,
 				4F539D621C13EA1500921D6E /* Info.plist */,
 				4F539D5A1C13EA1400921D6E /* CyCh.xcdatamodeld */,
-				4F539D701C14A9A400921D6E /* Transaction.swift */,
 			);
 			path = CyCh;
 			sourceTree = "<group>";
@@ -136,6 +133,7 @@
 				TargetAttributes = {
 					4F539D4F1C13EA1400921D6E = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = VYG72UKP78;
 					};
 				};
 			};
@@ -177,11 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AAB6A51C16346400B83B36 /* Transaction.swift in Sources */,
 				4F539D561C13EA1400921D6E /* ViewController.swift in Sources */,
-				4F539D741C14F13600921D6E /* Transaction+CoreDataProperties.swift in Sources */,
-				4F539D751C14F13600921D6E /* Transaction.swift in Sources */,
 				4F539D5C1C13EA1400921D6E /* CyCh.xcdatamodeld in Sources */,
-				4F539D711C14A9A400921D6E /* Transaction.swift in Sources */,
+				36AAB6A41C16346400B83B36 /* Transaction+CoreDataProperties.swift in Sources */,
 				4F539D6F1C14A66F00921D6E /* LedgerTableViewController.swift in Sources */,
 				4F539D541C13EA1400921D6E /* AppDelegate.swift in Sources */,
 				4F539D6D1C14A60400921D6E /* AddTransactionViewController.swift in Sources */,
@@ -297,7 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CyCh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rockvalleycollege.CyCh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,7 +307,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CyCh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rockvalleycollege.CyCh;
 				PRODUCT_NAME = "$(TARGET_NAME)";

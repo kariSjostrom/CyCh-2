@@ -2,7 +2,7 @@
 //  Transaction+CoreDataProperties.swift
 //  CyCh
 //
-//  Created by Karissa the Squid on 12/6/15.
+//  Created by Charles Konkol on 2015-12-07.
 //  Copyright © 2015 Rock Valley College. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -12,11 +12,11 @@
 import Foundation
 import CoreData
 
-extension transaction {
+extension Transaction {
 
-    @NSManaged var Amount: String?
-    @NSManaged var Type: NSObject?
-    @NSManaged var Notes: String?
-    @NSManaged var Date: NSDate?
+    @NSManaged var amount: String?
+    @NSManaged var date: String?
+    @NSManaged var notes: String?
+    @NSManaged var type: String?
 
 }

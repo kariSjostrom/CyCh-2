@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Funds: UILabel!
     
+    @IBOutlet var datePicker:UIDatePicker!
+   
+
+    
     var transactiondb:NSManagedObject!
     let managedObjectContext =
     (UIApplication.sharedApplication().delegate

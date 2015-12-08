@@ -41,7 +41,7 @@ class LedgerTableViewController: UITableViewController, UISearchResultsUpdating,
         let managedContext = appDelegate.managedObjectContext
         
         
-        let fetchRequest = NSFetchRequest(entityName:"Contact")
+        let fetchRequest = NSFetchRequest(entityName:"Transaction")
         
         
         var error: NSError?
@@ -169,7 +169,7 @@ class LedgerTableViewController: UITableViewController, UISearchResultsUpdating,
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "UpdateContacts" {
+        if segue.identifier == "UpdateTransaction" {
             if let destination = segue.destinationViewController as?
                 ViewController {
                     if (self.resultSearchController.active) {
